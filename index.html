@@ -1,0 +1,241 @@
+<!-- This site was written by James Hurliman and closely resembles the final example in "Bootstrap for web designers" taught by Adi Purdila on webdesign.tutsplus.com -->
+
+<html>
+<head>
+	<title>ajHurliman::</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+</head>
+<body data-spy="scroll" data-target="#main-navbar">
+
+	<!-- This is the navbar on the top of the screen -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" role"navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<!-- These three icon-bar spans make that button with three horizontal lines to collapse the navbar when the viewport is small-->
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a href="index.html" class="navbar-brand">ajHurliman</a>
+			</div> <!-- end of navbar-header -->
+
+			<!-- This is the collapsible portion of the header -->
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="#section-hobbies">Hobbies</a></li>
+					<li><a href="#section-gallery">Gallery</a></li>
+					<li><a href="#section-quotes">Quotes</a></li>
+					<li><a href="#section-contact">Contact</a></li>
+				</ul>
+			</div> <!-- end of the collapsible portion of the header -->
+		</div>
+	</nav>
+
+
+	<!-- Banner -->
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Hey.</h1>
+			<p>Welcome to my website.</p>
+			<p><a href="mailto:james.hurliman@gmail.com" class="btn btn-primary btn-lg" role="button">Email me</a></p>
+		</div>
+	</div> <!-- end of banner -->
+
+	<div class="container">
+		<!-- Hobbies -->
+		<section>
+			<div class="page-header" id="section-hobbies">
+				<h1>Hobbies. <small>I have them.</small></h1>
+			</div> <!-- end of hobbies header -->
+
+			<div class="row">
+				<div class="col-sm-8">
+					<h3>Web Development.</h3>
+					<p>I've dabbled in writing code for years, and now I'm taking that curiosity to a professional level. My next step is attending <a href="https://www.codefellows.org/">Code Fellows</a> then pursuing a career in web development.</p>
+				</div>
+				<div class="col-sm-4">
+					<img src="images/code.png" alt="code image" class="img-responsive">
+				</div>
+			</div> <!-- end of web development hobby section -->
+
+			<div class="row">
+				<div class="col-sm-8">
+					<h3>Kite Boarding.</h3>
+					<p>I recently bought a kite & board; it's a fun sport that combines the technical ability of flying a kite to achieve targeted amounts of force with the adrenaline-junkie speeds well known to boarders.</p>
+				</div>
+				<div class="col-sm-4">
+					<img src="images/kiteboard.jpg" alt="code image" class="img-responsive">
+				</div>
+			</div> <!-- end of kite boarding hobby section -->
+
+			<div class="row">
+				<div class="col-sm-8">
+					<h3>Mechanical Design.</h3>
+					<p>I have a BS in Mechanical Engineering and have been designing for 3 years outside of college. I've worked in solar, aerospace, construction and water treatment.</p>
+				</div>
+				<div class="col-sm-4">
+					<img src="images/skid.jpg" alt="code image" class="img-responsive">
+				</div>
+			</div> <!-- end of mechanical design hobby section -->
+		</section> <!-- end of hobbies section -->
+
+		<!-- Gallery -->
+		<section>
+			<div class="page-header" id="section-gallery">
+				<h2>Gallery <small>Here are pictures.</small></h2>
+			</div> <!-- end of page header -->
+
+			<div class="carousel slide" id="gallery-carousel" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#gallery-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#gallery-carousel" data-slide-to="1"></li>
+					<li data-target="#gallery-carousel" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Here are the slides in the carousel -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="images/slider-1.jpg" alt="Slider image">
+						<div class="carousel-caption">Caption 1</div>
+					</div>
+					<div class="item">
+						<img src="images/slider-2.jpg" alt="Slider image">
+						<div class="carousel-caption">Caption 2</div>
+					</div>
+					<div class="item">
+						<img src="images/slider-3.jpg" alt="Slider image">
+						<div class="carousel-caption">Caption 3</div>
+					</div>
+				</div> <!-- end of carousel-inner -->
+
+				<a href="#gallery-carousel" class="left carousel-control" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a href="#gallery-carousel" class="right carousel-control" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div> <!-- end of carousel -->
+		</section> <!-- end of gallery -->
+
+		<!-- Quotes -->
+		<section>
+			<div class="page-header" id="section-quotes">
+				<h2>Quotes. <small>Things other people said.</small></h2>
+			</div> <!-- end page-header -->
+
+			<div class="row">
+				<div class="col-sm-4">
+					<blockquote>
+						<p>"Man is a rope, tied between beast and overman--a rope over an abyss. A dangerous across, a dangerous on-the-way, a dangerous looking-back, a dangerous shuddering and stopping. What is great in man is that he is a bridge and not an end: what can be loved in man is that he is an overture and a going under. I love those who do not know how to live, for they are those who cross over."</p>
+						<footer>Friedrich Nietzsche "Thus Spoke Zarathustra"</footer>
+					</blockquote>
+				</div>
+				<div class="col-sm-4">
+					<blockquote>
+						<p>"We sit together,<br>the mountain and I,<br>until only the mountain remains"<p><footer>-Li Bai</footer>
+					</blockquote>
+				</div>
+				<div class="col-sm-4">
+					<blockquote>
+						<p>"Heaven lasts long, and Earth abides. What is the secret of their durability? Is it because they do not live for themselves, that they endure so long?"</p>
+						<footer>Lao Tzu"</footer>
+					</blockquote>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section>
+			<div class="page-header" id="section-contact">
+				<h2>Contact me. <small>If you want.</small></h2>
+			</div> <!-- end page header -->
+
+
+			<div class="row">
+				<div class="col-lg-4">
+					<p>Send me a message, I'll get back to you.</p>
+				</div>
+
+				<div class="col-lg-8">
+					<form action="#" class="form-horizontal" role="form">
+						<div class="form-group">
+							<label for="contact-name" class="col-lg-2 control-label">Name</label>
+
+							<div class="col-lg-10">
+								<input type="text" class="form-control" id="contact-name" placeholder="Name">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="contact-email" class="col-lg-2 control-label">Email address</label>
+
+							<div class="col-lg-10">
+								<input type="text" class="form-control" id="contact-email" placeholder="Email address">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="contact-website" class="col-lg-2 control-label">Website</label>
+
+							<div class="col-lg-10">
+								<input type="text" class="form-control" id="contact-website" placeholder="Website">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="contact-message" class="col-lg-2 control-label">Message</label>
+
+							<div class="col-lg-10">
+								<textarea name="contact-message" id="contact-message" cols="30" rows="10" class="form-control" placeholder="Message"></textarea>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-lg-10 col-lg-offset-2">
+								<button type="submit" class="btn btn-primary">Send Message</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div> <!-- end row -->
+		</section>  <!-- end of contact section -->
+
+		<!-- Footer -->
+		<footer>
+			<hr>
+
+			<div class="container text-center">
+				<h2>Thanks for checking out my site!</h2>
+				<p><small><em>Come back soon, y'hear?</em></small></p>
+
+
+				<hr>
+
+				<ul class="list-inline">
+					<li><a href="http://www.twitter.com/ajhurliman">Twitter</a></li>
+					<li><a href="http://www.facebook.com/ajhurliman">Facebook</a></li>
+				</ul>
+
+				<p>&copy; Copyright 2014.</p>
+			</div>
+		</footer>
+	</div> <!-- end container that covers basically everything but the navbar -->
+
+
+
+
+
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>
